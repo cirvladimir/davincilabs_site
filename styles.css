@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --background-color: #ffffff;
-    --section-bg: #f3f4f6;
+    --primary-color: #8B4513;
+    --secondary-color: #5C4033;
+    --text-color: #3D2B1F;
+    --background-color: #F5E6D3;
+    --section-bg: #F0E4C8;
+    --accent-color: #A0522D;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Crimson Text', serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -34,7 +35,8 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -58,15 +60,29 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 6rem 0;
-    background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+    padding: 4rem 0;
+    background: var(--background-color);
+    position: relative;
 }
 
 .hero h1 {
+    font-family: 'Cinzel', serif;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.hero-image {
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.hero-graphic {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero p {
@@ -105,11 +121,12 @@ section h2 {
 }
 
 .solution-card {
-    background: white;
+    background: var(--section-bg);
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 1px solid var(--accent-color);
 }
 
 .solution-card:hover {
@@ -130,8 +147,9 @@ section h2 {
 footer {
     text-align: center;
     padding: 2rem 0;
-    border-top: 1px solid #e5e7eb;
-    color: #6b7280;
+    border-top: 1px solid var(--accent-color);
+    color: var(--secondary-color);
+    font-family: 'Cinzel', serif;
 }
 
 @media (max-width: 768px) {
